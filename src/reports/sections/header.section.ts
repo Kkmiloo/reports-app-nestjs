@@ -21,7 +21,8 @@ const currentDate: Content = {
   text: DateFormatter.getDDMMMMYYY(new Date()),
   alignment: 'right',
   margin: [20, 30],
-  width: 150,
+  width: 100,
+  fontSize: 10,
 };
 
 export const headerSection = (options: HeaderOptions): Content => {
