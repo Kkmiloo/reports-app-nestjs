@@ -14,4 +14,13 @@ export class ExtraReportsController {
     pdfDoc.pipe(response);
     pdfDoc.end();
   }
+
+  @Get('community-report')
+  async getCommunityReport(@Res() response: Response) {
+    const pdfDoc = await this.extraReportsService.getCommunity();
+
+    response.setHeader('Content-Type', 'application/pdf');
+    pdfDoc.pipe(response);
+    pdfDoc.end();
+  }
 }

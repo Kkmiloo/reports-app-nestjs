@@ -1,3 +1,5 @@
+export { getCommunityReport } from './community.report';
+
 export { getStatisticsReport } from './statistics.report';
 
 export { orderByIdReport } from './order-by-id.report';
